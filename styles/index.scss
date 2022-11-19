@@ -1,0 +1,181 @@
+@import "./fonts";
+@import "./general";
+@import "./header";
+@import "./section";
+/*=================== header =====================*/
+.section {
+  padding: 40px 0 120px;
+  &__content {
+    display: flex;
+    &__photo {
+      width: 430px;
+      height: 430px;
+      padding: 15px;
+      position: relative;
+
+      &__user {
+        background-image: url(../img/user.png);
+        width: 400px;
+        height: 400px;
+      }
+
+      &__user__element:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        z-index: -1;
+        background-image: url(../img/angle.png);
+        transform: rotate(90deg);
+      }
+      &__user__element:nth-child(3) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        z-index: -1;
+        background-image: url(../img/angle.png);
+        transform: rotate(180deg);
+      }
+      &__user__element:nth-child(4) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        z-index: -1;
+        background-image: url(../img/angle.png);
+        transform: rotate(270deg);
+      }
+      &__user__element:nth-child(5) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        z-index: -1;
+        background-image: url(../img/angle.png);
+        transform: rotate(360deg);
+      }
+    }
+    &__text {
+      max-width: 420px;
+      width: 100%;
+      &__title {
+        position: relative;
+        margin-bottom: 60px;
+      }
+      &__title::before {
+        content: " ";
+        background-color: #ffcc00;
+        height: 1px;
+        width: 100px;
+        bottom: -30px;
+        right: calc(50% - 50px);
+        position: absolute;
+      }
+      .social_icons {
+        margin: 30px 0 50px;
+      }
+    }
+  }
+}
+.section__content {
+  padding: 70px 0 0 0;
+  .section__content__photo {
+    margin-right: 170px;
+    position: relative;
+  }
+  .section__content__photo::before {
+    content: " ";
+    width: 1px;
+    height: 560px;
+    background-color: #ffcc00;
+    position: absolute;
+    top: -70px;
+    right: -115px;
+  }
+}
+/*=============== hover effects =======================*/
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social_icons__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.social_icons__item svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.social_icons__item:hover .facebook {
+  opacity: 0;
+}
+
+.social_icons__item:hover a svg.facebook-hover {
+  z-index: 1;
+  background-image: url(../img/socials/hover/facebook.png);
+  width: 30px;
+  height: 30px;
+}
+
+.social_icons__item:hover .twitter {
+  opacity: 0;
+}
+
+.social_icons__item:hover a svg.twitter-hover {
+  z-index: 1;
+  background-image: url(../img/socials/hover/twitter.png);
+  width: 30px;
+  height: 30px;
+}
+.social_icons__item:hover .google {
+  opacity: 0;
+}
+
+.social_icons__item:hover a svg.google-hover {
+  z-index: 1;
+  background-image: url(../img/socials/hover/google+.png);
+  width: 30px;
+  height: 30px;
+}
+
+.social_icons__item:hover .in {
+  opacity: 0;
+}
+
+.social_icons__item:hover a svg.in-hover {
+  z-index: 1;
+  background-image: url(../img/socials/hover/linkedin.png);
+  width: 30px;
+  height: 30px;
+}
+/*============================== end_hover effects ============================*/
+.slider_and_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0 25px;
+  svg {
+    height: 4px;
+    width: 50px;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  button {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 1px solid #ffcc00;
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+  }
+}
