@@ -1,0 +1,8 @@
+<svg width="50" height="4"  fill="none" xmlns="http://www.w3.org/2000/svg">
+<symbol viewBox="0 0 50 4" id="slider">
+    
+<rect width="10" height="4" fill="#FFCC00"/>
+<rect x="15" width="20" height="4" fill="#FFCC00"/>
+<rect x="40" width="10" height="4" fill="#FFCC00"/>
+</symbol>
+</svg>
