@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Raleway:wght@400;500&family=Roboto:wght@900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #e4e4e4;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #ffcc00;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #666666;
+  font-family: "Raleway", sans-serif;
+}
+
+h4 {
+  font-size: 18px;
+  color: #898f8f;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.button {
+  color: #666666;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 121px 0;
+}
+
+.header {
+  border-bottom: 1px solid #ffcc00;
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header__title {
+  margin-bottom: 45px;
+}
+.header__icon {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+}
+.header__icon svg {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+/*=================== header =====================*/
+.section {
+  padding: 40px 0 120px;
+}
+.section__content {
+  display: flex;
+}
+.section__content__photo {
+  width: 430px;
+  height: 430px;
+  padding: 15px;
+  position: relative;
+}
+.section__content__photo__user {
+  background-image: url(../img/user.png);
+  width: 400px;
+  height: 400px;
+}
+.section__content__photo__user__element:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  background-image: url(../img/angle.png);
+  transform: rotate(90deg);
+}
+.section__content__photo__user__element:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  background-image: url(../img/angle.png);
+  transform: rotate(180deg);
+}
+.section__content__photo__user__element:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  background-image: url(../img/angle.png);
+  transform: rotate(270deg);
+}
+.section__content__photo__user__element:nth-child(5) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  background-image: url(../img/angle.png);
+  transform: rotate(360deg);
+}
+.section__content__text {
+  max-width: 420px;
+  width: 100%;
+}
+.section__content__text__title {
+  position: relative;
+  margin-bottom: 60px;
+}
+.section__content__text__title::before {
+  content: " ";
+  background-color: #ffcc00;
+  height: 1px;
+  width: 100px;
+  bottom: -30px;
+  right: calc(50% - 50px);
+  position: absolute;
+}
+.section__content__text .social_icons {
+  margin: 30px 0 50px;
+}
+.section__content {
+  padding: 70px 0 0 0;
+}
+.section__content .section__content__photo {
+  margin-right: 170px;
+  position: relative;
+}
+.section__content .section__content__photo::before {
+  content: " ";
+  width: 1px;
+  height: 560px;
+  background-color: #ffcc00;
+  position: absolute;
+  top: -70px;
+  right: -115px;
+}
+
+/*=============== hover effects =======================*/
+.social_icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social_icons__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.social_icons__item svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.social_icons__item:hover .facebook {
+  opacity: 0;
+}
+
+.social_icons__item:hover a svg.facebook-hover {
+  z-index: 1;
+  background-image: url(../img/socials/hover/facebook.png);
+  width: 30px;
+  height: 30px;
+}
+
+.social_icons__item:hover .twitter {
+  opacity: 0;
+}
+
+.social_icons__item:hover a svg.twitter-hover {
+  z-index: 1;
+  background-image: url(../img/socials/hover/twitter.png);
+  width: 30px;
+  height: 30px;
+}
+
+.social_icons__item:hover .google {
+  opacity: 0;
+}
+
+.social_icons__item:hover a svg.google-hover {
+  z-index: 1;
+  background-image: url(../img/socials/hover/google+.png);
+  width: 30px;
+  height: 30px;
+}
+
+.social_icons__item:hover .in {
+  opacity: 0;
+}
+
+.social_icons__item:hover a svg.in-hover {
+  z-index: 1;
+  background-image: url(../img/socials/hover/linkedin.png);
+  width: 30px;
+  height: 30px;
+}
+
+/*============================== end_hover effects ============================*/
+.slider_and_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0 25px;
+}
+.slider_and_button svg {
+  height: 4px;
+  width: 50px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.slider_and_button button {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid #ffcc00;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */
